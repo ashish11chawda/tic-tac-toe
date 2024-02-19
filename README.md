@@ -25,25 +25,29 @@ cd tic-tac-toe
 npm install
 ```
 
-### Run the Development Server
+### Starting the React App
+To launch the React app, navigate to the client directory and run the following commands:
 
 ```bash
+cd client
 npm start
 ```
 
-This will start the development server, and you can view the Tic Tac Toe game by visiting http://localhost:3000 in your web browser.
+This will start the react app, and you can view the Tic Tac Toe game by visiting http://localhost:3000 in your web browser.
+
+### Run the Development Server
+
+```bash
+cd server
+npm start
+```
+
+This will start the development server on http://localhost:3001.
 
 ### Play the Game
-- Open the game in your browser.
+- Open the game in your browser, and open another instance of the game in a separate incognito/private window or browser.
 - Two players take turns clicking on empty spaces to place their X or O.
 - The game announces the winner or declares a draw when the board is full.
-
-### Additional Scripts
-In the project directory, you can run:
-
-- `npm test`: Launches the test runner in interactive watch mode.
-- `npm build`: Builds the app for production to the build folder.
-- `npm eject`: Removes the single build dependency from the project.
 
 ### License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
