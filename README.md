@@ -25,7 +25,18 @@ cd tic-tac-toe
 npm install
 ```
 
-### Starting the React App
+### Start the Development Environment
+To run both the React app and the development server concurrently in a development environment, you can use the following command:
+
+```bash
+npm start
+```
+
+This command will start both the React app and the development server, allowing you to view the Tic Tac Toe game by visiting http://localhost:3000 in your web browser.
+
+Alternatively, if you prefer to start them separately:
+
+#### Starting the React App
 To launch the React app, navigate to the client directory and run the following commands:
 
 ```bash
@@ -35,7 +46,7 @@ npm start
 
 This will start the react app, and you can view the Tic Tac Toe game by visiting http://localhost:3000 in your web browser.
 
-### Run the Development Server
+#### Run the Development Server
 
 ```bash
 cd server
