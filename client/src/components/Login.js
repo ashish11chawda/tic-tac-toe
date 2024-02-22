@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import Cookies from 'universal-cookie';
 
-function Login({setIsAuth}) {
+function Login({setIsAuth, SERVER_URL}) {
     const [username, setUsername] =  useState("");
     const [password, setPassword] =  useState("");
 
 
     const login = () => {
         const cookies = new Cookies();
-        axios.post("http://localhost:3001/login", {
+        axios.post(`${SERVER_URL}/login`, {
             username, 
             password
         }).then(res => {

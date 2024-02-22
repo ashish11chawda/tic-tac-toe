@@ -11,6 +11,7 @@ app.use(express.json());
 const api_key = process.env.API_KEY;
 const api_secret = process.env.API_SECRET;
 const serverClient = StreamChat.getInstance(api_key, api_secret);
+const PORT = process.env.PORT || 3001;
 
 app.post("/signup", async (req, res) => {
     try {
@@ -51,6 +52,6 @@ app.post("/login", async (req, res) => {
     }
 });
 
-app.listen(3001, () => {
-    console.log("Server is running on port 3001");
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });

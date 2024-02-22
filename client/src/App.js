@@ -15,6 +15,7 @@ function App() {
   const cookies = new Cookies();
   const token = cookies.get("token");
   const [isAuth, setIsAuth] = useState(false);
+  const SERVER_URL = process.env.REACT_APP_SERVER_URL;
   
   const logout = () => {
     cookies.remove("token");
@@ -49,8 +50,8 @@ function App() {
       </Chat>
       ) : (
       <>
-        <SignUp setIsAuth={setIsAuth}/>
-        <Login setIsAuth={setIsAuth}/>
+        <SignUp setIsAuth={setIsAuth} SERVER_URL={SERVER_URL}/>
+        <Login setIsAuth={setIsAuth} SERVER_URL={SERVER_URL}/>
       </>)}
     </div>
   );
